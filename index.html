@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tanmay Pachpol | Founder of AutoBiz</title>
+  <meta name="description" content="Tanmay Pachpol is the Founder of AutoBiz, building AI solutions for small businesses.">
+  <meta name="author" content="Tanmay Pachpol">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #ffffff;
+      color: #0f172a;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    /* NAVBAR */
+    nav {
+      padding: 22px 0;
+      border-bottom: 1px solid #e5e7eb;
+      background: rgba(255,255,255,0.95);
+    }
+
+    .nav-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      color: #2563eb;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      color: #475569;
+      font-size: 15px;
+    }
+
+    .nav-links a:hover {
+      color: #2563eb;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 110px 0;
+      text-align: center;
+      background: linear-gradient(180deg, #eff6ff 0%, #ffffff 100%);
+    }
+
+    .badge {
+      display: inline-block;
+      background: #dbeafe;
+      color: #2563eb;
+      padding: 7px 15px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 8vw, 76px);
+      line-height: 1.05;
+      margin-bottom: 20px;
+      letter-spacing: -2px;
+    }
+
+    .hero h1 span {
+      color: #2563eb;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #64748b;
+      font-size: 20px;
+    }
+
+    .buttons {
+      margin-top: 35px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 13px 23px;
+      border-radius: 10px;
+      font-weight: 700;
+      display: inline-block;
+    }
+
+    .primary {
+      background: #2563eb;
+      color: white;
+    }
+
+    .primary:hover {
+      background: #1d4ed8;
+    }
+
+    .secondary {
+      border: 1px solid #cbd5e1;
+      color: #0f172a;
+      background: white;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .section-subtitle {
+      text-align: center;
+      color: #64748b;
+      max-width: 650px;
+      margin: 0 auto 45px;
+    }
+
+    /* ABOUT */
+    .about {
+      max-width: 750px;
+      margin: auto;
+      text-align: center;
+      color: #475569;
+      font-size: 18px;
+    }
+
+    /* AUTOBIZ */
+    .autobiz-card {
+      max-width: 850px;
+      margin: auto;
+      padding: 45px;
+      border-radius: 20px;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+    }
+
+    .autobiz-card h3 {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .autobiz-card p {
+      color: #475569;
+      margin-bottom: 25px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin: 25px 0;
+    }
+
+    .feature {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      border: 1px solid #dbeafe;
+    }
+
+    /* JOURNEY */
+    .timeline {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .timeline-item {
+      padding: 22px;
+      margin-bottom: 15px;
+      border-left: 4px solid #2563eb;
+      background: #f8fafc;
+      border-radius: 0 10px 10px 0;
+    }
+
+    .timeline-item strong {
+      color: #2563eb;
+    }
+
+    /* FOCUS */
+    .focus-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .focus-card {
+      padding: 25px 15px;
+      text-align: center;
+      background: #f8fafc;
+      border-radius: 12px;
+      font-weight: 700;
+    }
+
+    /* CONTACT */
+    .contact {
+      text-align: center;
+      background: #0f172a;
+      color: white;
+    }
+
+    .contact p {
+      color: #cbd5e1;
+      margin: 15px auto 25px;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .social-links a {
+      color: white;
+      border: 1px solid #475569;
+      padding: 10px 18px;
+      border-radius: 8px;
+    }
+
+    .social-links a:hover {
+      background: #2563eb;
+      border-color: #2563eb;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 700px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding: 80px 0;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+
+      .features,
+      .focus-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .autobiz-card {
+        padding: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="container nav-content">
+      <div class="logo">Tanmay Pachpol</div>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#autobiz">AutoBiz</a>
+        <a href="#journey">Journey</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+
+      <div class="badge">Founder • AutoBiz</div>
+
+      <h1>
+        Hi, I'm <span>Tanmay Pachpol.</span>
+      </h1>
+
+      <p>
+        I'm building AI employees that help small businesses
+        respond to customers, capture leads and grow more efficiently.
+      </p>
+
+      <div class="buttons">
+        <a class="btn primary"
+           href="https://autobiz-saas-platfor-a94v.bolt.host"
+           target="_blank">
+          Explore AutoBiz →
+        </a>
+
+        <a class="btn secondary"
+           href="YOUR_LINKEDIN_URL"
+           target="_blank">
+          LinkedIn
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+
+      <h2 class="section-title">About Me</h2>
+
+      <p class="section-subtitle">
+        Building, learning and solving real business problems.
+      </p>
+
+      <div class="about">
+        <p>
+          I'm Tanmay Pachpol, Founder of AutoBiz.
+          My goal is to build technology that makes running a
+          small business simpler and more efficient.
+        </p>
+
+        <br>
+
+        <p>
+          I'm currently focused on product development, AI,
+          automation, sales, marketing and entrepreneurship while
+          building AutoBiz from the ground up.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- AUTOBIZ -->
+  <section id="autobiz">
+    <div class="container">
+
+      <h2 class="section-title">What I'm Building</h2>
+
+      <p class="section-subtitle">
+        Turning a real small-business problem into a product.
+      </p>
+
+      <div class="autobiz-card">
+
+        <h3>🤖 AutoBiz</h3>
+
+        <p>
+          AutoBiz is an AI employee for small businesses.
+          It helps businesses handle customer conversations,
+          capture leads and automate follow-ups.
+        </p>
+
+        <div class="features">
+          <div class="feature">⚡ Instant customer replies</div>
+          <div class="feature">🎯 Lead management</div>
+          <div class="feature">🔄 Automated follow-ups</div>
+          <div class="feature">📊 Business dashboard</div>
+        </div>
+
+        <a class="btn primary"
+           href="https://autobiz-saas-platfor-a94v.bolt.host"
+           target="_blank">
+          Visit AutoBiz →
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- JOURNEY -->
+  <section id="journey">
+    <div class="container">
+
+      <h2 class="section-title">My Journey</h2>
+
+      <p class="section-subtitle">
+        Building in public and continuously improving.
+      </p>
+
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <strong>Building AutoBiz</strong>
+          <p>Started building an AI-powered SaaS product for small businesses.</p>
+        </div>
+
+        <div class="timeline-item">
+          <strong>Building the MVP</strong>
+          <p>Creating and testing the first version of AutoBiz.</p>
+        </div>
+
+        <div class="timeline-item">
+          <strong>Customer Learning</strong>
+          <p>Understanding real problems faced by small businesses.</p>
+        </div>
+
+        <div class="timeline-item">
+          <strong>Building in Public</strong>
+          <p>Sharing the journey, lessons and progress online.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOCUS -->
+  <section>
+    <div class="container">
+
+      <h2 class="section-title">What I Focus On</h2>
+
+      <p class="section-subtitle">
+        Areas I'm learning and building in.
+      </p>
+
+      <div class="focus-grid">
+        <div class="focus-card">AI & Automation</div>
+        <div class="focus-card">SaaS</div>
+        <div class="focus-card">Product Development</div>
+        <div class="focus-card">Entrepreneurship</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <h2 class="section-title">Let's Connect</h2>
+
+      <p>
+        Interested in AI, SaaS, startups or small-business technology?
+        Let's connect.
+      </p>
+
+      <div class="social-links">
+
+        <a href="YOUR_LINKEDIN_URL" target="_blank">
+          LinkedIn
+        </a>
+
+        <a href="YOUR_X_URL" target="_blank">
+          X
+        </a>
+
+        <a href="mailto:YOUR_EMAIL">
+          Email
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Tanmay Pachpol. All rights reserved.
+  </footer>
+
+</body>
+          </html>
